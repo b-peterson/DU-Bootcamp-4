@@ -55,10 +55,6 @@ class GramsController < ApplicationController
         params.require(:gram).permit(:message, :picture)
     end
 
-    def render_not_found
-        render plain: 'Not Fount :(', status: :not_found
-    end
-
     def render_forbidden
         render plain: 'Forbidden :(', status: :forbidden
     end
